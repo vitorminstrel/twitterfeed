@@ -1,0 +1,28 @@
+.filtered-tweets {
+  display: inline-block;
+  width: 100%;
+
+  .no-results {
+    text-align: center;
+    > p {
+      color: green;
+    }
+  }
+
+  .table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    background-color: white;
+
+    th {
+      font-weight: normal;
+      opacity: 0.5;
+    }
+
+    .long-string {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

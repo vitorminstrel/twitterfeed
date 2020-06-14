@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+}
+
+.tweet-filter {
+  width: 30%;
+  min-width: 290px;
+  display: flex;
+  margin-bottom: 20px;   
+  margin-top: 5px;
+  margin-left: 2px;
+  
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    opacity: 0.5;
+    z-index: 999;
+
+    .spinner {
+      color: blue;
+      font-size: xx-large;
+      top: 50%;
+      left: 50%;
+      position: fixed;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+  .filter-right-content {
+    margin-left: -35px;
+    margin-top: 7px;
+
+    .text-input:valid {
+        background-color:  white !important;
+      }
+
+    .img-div {
+      background: url('../../magnifier.png') no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
+  
